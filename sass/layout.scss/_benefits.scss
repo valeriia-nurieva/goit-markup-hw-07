@@ -1,0 +1,33 @@
+.benefits {
+    display: flex;
+
+    &__item {
+      max-width: 270px;
+      &:not(:last-child) {
+        margin-right: var(--tipycal-margin);
+      }
+    }
+  
+    &__title {
+      margin-bottom: 10px;
+    
+      color: var(--primary-text-colour);
+      @include font(14px, null, 1.14, null);
+      text-transform: uppercase;
+    }
+    
+    &__descr {
+      color: var(--secondary-text-color);
+    }
+    
+    &__thumb {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: var(--tipycal-margin);
+      background-color: var(--secondary-background-color);
+      width: 270px;
+      height: 120px;
+    }
+  }
+  
